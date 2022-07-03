@@ -9,7 +9,7 @@
         }
         h1 {
             font-size: 50px;
-            text-align:right;
+            text-align:center;
             color: #333;
             margin: -20px 0px 30px 0px;
             letter-spacing:-4pt;
@@ -19,5 +19,9 @@
 <body>
     <h1>{{ $title }}</h1>
     <p>{{ $content }}</p>
+    <form method="POST" action="localhost:8001">
+        @csrf
+        <input type="text" name="msg">
+        <input type="submit" value="送信">
 </body>
 </html>
