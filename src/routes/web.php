@@ -19,7 +19,7 @@ Route::get('/', function () {
 // Route::get('/home', function () {
 //     return view('home');
 // });
-Route::get('/home','App\Http\Controllers\ml_top@index');
+Route::get('/mltop','App\Http\Controllers\ml_top@index');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
